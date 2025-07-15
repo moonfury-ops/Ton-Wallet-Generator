@@ -1,0 +1,28 @@
+{
+  "name": "ton-wallet-generator",
+  "version": "1.0.0",
+  "description": "TON Blockchain Wallet Generator using Node.js",
+  "main": "wallet-generator.js",
+  "scripts": {
+    "start": "node wallet-generator.js",
+    "test": "node test-generator.js"
+  },
+  "keywords": [
+    "ton",
+    "blockchain",
+    "wallet",
+    "generator",
+    "cryptocurrency",
+    "mnemonic"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ton/ton": "^13.5.1",
+    "@ton/core": "^0.56.0",
+    "@ton/crypto": "^3.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 
