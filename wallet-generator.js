@@ -9,7 +9,7 @@ const generateWallet = async () => {
     const publicKey = keyPair.publicKey;
     const secretKey = keyPair.secretKey;
     const wallet = tonWeb.wallet.create({publicKey: publicKey, version: 'v1R2'});
-    const walletAddress = (await wallet.getAddress()).toString(true, true, false);
+    const walletAddress = (await wallet.getAddress()).toString(true, true, true);
 
     console.log("Mnemonic:", mnemonics.join(' '));
     console.log("Public Key:", Buffer.from(publicKey).toString('hex'));
